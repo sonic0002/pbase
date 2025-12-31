@@ -1,0 +1,7 @@
+-- example:
+-- create table if not exists xxx (
+--     id int primary key auto_increment,
+--     name varchar(255) not null,
+--     email varchar(255) not null,
+--     created_at timestamp not null default current_timestamp
+-- );

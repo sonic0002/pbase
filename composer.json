@@ -1,0 +1,6 @@
+{
+    "require": {
+        "ezyang/htmlpurifier": "^4.18",
+        "philipp15b/php-i18n": "^4.0"
+    }
+}
