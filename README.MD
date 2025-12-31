@@ -90,11 +90,15 @@ This project uses the following main dependencies (managed via Composer):
 
 ## Usage
 
-1. Start by configuring your database connection in `includes/config.php`
+1. Start by configuring your database connection in `lib/DataConnection.php`
+   - Should set environment variables such as DB_NAME, DB_USERNAME and DB_PASSWORD before starting the server.
 2. Run the initial database migration from `database/0001-create-xxx.sql`
-3. Customize the header and footer in `includes/header.php` and `includes/footer.php`
-4. Add your application logic in the `lib/` directory
-5. Create your pages using the included components
+3. Define your entity definition in `lib/util/generate_entity.php` and run below in browser to generate entity class files for database record mapping.
+   - http://<your-local-host>/lib/util/generate_entity.php
+4. Customize the header and footer in `includes/header.php` and `includes/footer.php`
+5. Add your application logic in the `lib/` directory
+6. Create your pages using the included components
+7. Run `composer install` to install dependencise.
 
 ## Contributing
 
